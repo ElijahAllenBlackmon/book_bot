@@ -9,4 +9,10 @@ def get_book_path(path):
     with open(book_path) as f:
         return f.read()
 
-main()
+
+def word_count():
+    text = get_book_path(book_path)
+    words = text.split()
+    print(f"{len(words)} words are in the text")
+
+word_count()
